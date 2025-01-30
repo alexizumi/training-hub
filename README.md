@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# Training Hub
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📖 Table of Contents
 
-## Get started
+- [About](#about)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Installation & Setup](#installation-setup)
+- [Usage Instructions](#usage-instructions)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Screenshots & Demos](#screenshots-demos)
+- [Special Thanks](#special-thanks)
+- [License](#license)
 
-1. Install dependencies
+## ❓ About <a name = "about"></a>
 
-   ```bash
-   npm install
-   ```
+Training Hub is an app designed to help personal trainers (PTs) manage their clients, track workouts and progress, monitor client status, and communicate with them. Clients will have a mobile app to follow workouts, mark them as done, give feedback, and communicate with their PTs.
 
-2. Start the app
+The app is inspired by the challenges faced by PTs like my sister, who struggled to find an affordable and comprehensive tool that integrates several functionalities such as Excel, WhatsApp, and notepads—all in one place.
 
-   ```bash
-    npx expo start
-   ```
+## 🚀 Features <a name = "features"></a>
 
-In the output, you'll find options to open the app in a
+- **Workout Management**: Create, assign, and manage workout plans.
+- **Client Communication**: Integrated chat for PTs and clients.
+- **Progress Tracking with Visual Insights**: Track progress with visual charts and graphs.
+- **Gamified Achievements**: Motivate clients with achievements and rewards.
+- **Payments and Bills**: Manage client payments and billing.
+- **Client Management**: Track client metrics such as weight, BMI, and body fat.
+- **Complete Workouts with Video**: Access to workout videos.
+- **Integrated Nutrition Guidance**: Provide clients with nutrition plans and tips.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Technology Stack <a name = "technology-stack"></a>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Frontend (Mobile)**: React Native + Expo (cross-platform for iOS & Android)
+- **Frontend (Web Dashboard)**: React.js or React Native (TBD)
+- **Backend**: Firebase (serverless approach)
+- **Database**: Firebase Firestore (real-time sync)
+- **Auth & Payments**: Firebase Authentication + Stripe
 
-## Get a fresh project
+## ⛏️ Installation & Setup <a name = "installation-setup"></a>
 
-When you're ready, run:
+These instructions will help you set up Training Hub on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Ensure you have the following tools installed:
 
 ```bash
-npm run reset-project
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Expo CLI
+- Firebase CLI
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Cloning this Repository
 
-## Learn more
+Open your terminal, navigate to the directory where you want to clone this repo, and run the following command:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone (https://github.com/alexizumi/training-hub/)
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Installing Dependencies
 
-## Join the community
+Navigate to the project directory and run the following command to install dependencies:
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Setting Up Firebase
+
+- Create a Firebase project in the Firebase Console.
+- Set up Firestore, Authentication, and Cloud Functions.
+- Download the google-services.json file and place it in the root directory.
+  Environment Variables
+- Create a .env file in the root directory and add the following variables:
+
+```bash
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+REACT_APP_STRIPE_API_KEY=your_stripe_api_key
+```
+
+## 🧪 Testing <a name = "testing"></a>
+
+TBC
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Not yet available
+
+## 📸 Screenshots & Demos <a name = "screenshots-demos"></a>
+
+Not yet available
+
+## 🎉 Special Thanks <a name = "special-thanks"></a>
+
+I will fill this section based on your acknowledgments of any libraries, frameworks, or individuals who helped with the project.
+
+## 📜 License <a name = "license"></a>
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software for commercial purposes.
